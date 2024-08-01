@@ -120,7 +120,7 @@ def main():
     csv_file = os.path.expanduser(r"/Users/apspa/Documents/PSU/RESEARCH PROJECT/Code/outputs/export.csv")
     
     # Export data every 15 minutes for 5 hours (300 minutes)
-    export_data_repeatedly(URL, csv_file, duration_minutes=15, interval_minutes=1)
+    export_data_repeatedly(URL, csv_file, duration_minutes=300, interval_minutes=15)
     
     # Initialize and run the PyQt application
     app = QApplication([])
