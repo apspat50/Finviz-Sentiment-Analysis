@@ -24,7 +24,8 @@ Update FinViz API Token:
 Update the export.py script with your FinViz API token. Replace the placeholder token in the URL with your actual token.
 Script Details
 
-get_news.py
+
+**get_news.py**
 Fetches news articles for specified stock tickers using the FinViz API and saves them to CSV files.
 
 python get_news.py
@@ -35,7 +36,8 @@ Fetches news articles for tickers listed in the tickers variable.
 Saves today's articles to individual CSV files for each ticker.
 Checks if files already exist and appends data as needed.
 
-analyze_sentiment.py
+
+**analyze_sentiment.py**
 Analyzes sentiment scores of news articles and appends the results to the existing CSV files.
 
 python analyze_sentiment.py
@@ -46,7 +48,8 @@ Reads news articles from CSV files.
 Performs sentiment analysis on the article content.
 Appends sentiment scores to the existing CSV files.
 
-export.py
+
+**export.py**
 Exports stock price data from FinViz to a CSV file at regular intervals.
 
 python export.py
@@ -57,7 +60,8 @@ Fetches stock price data from a specified URL.
 Appends the data to a CSV file.
 Runs periodically based on the specified interval.
 
-bothplot.py
+
+**bothplot.py**
 Plots combined sentiment scores and stock prices over time for multiple tickers.
 
 python bothplot.py
@@ -68,7 +72,8 @@ Reads sentiment and price data from CSV files.
 Plots combined sentiment scores and stock prices for each ticker.
 Uses Matplotlib to generate and display the plots.
 
-clear.py
+
+**clear.py**
 Clears the content of all CSV files in a specified directory. Useful for starting with fresh files each day.
 
 python clear.py
@@ -85,14 +90,16 @@ export.py: Script to export stock price data.
 bothplot.py: Script to plot sentiment and price data.
 clear.py: Script to clear CSV files.
 
-Notes:
+
+## Notes:
 
 Ensure the output directory specified in the scripts exists.
 Adjust time intervals and file paths according to your needs.
 Make sure you have the necessary API tokens and permissions to access the FinViz data.
 For any issues or feature requests, please open an issue on this repository.
 
-Acknowledgments:
+
+## Acknowledgments:
 
 FinViz API
 BeautifulSoup
